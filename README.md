@@ -7,7 +7,6 @@ Simple web app that displays details about a random beer.
 The functionality should allow a user to click on the ‘Show Another Beer’ button to view information about the next random beer.
 
 
-
 ## Stack:
 
 ### REST API
@@ -38,7 +37,6 @@ Once you have all above installed, just go to the folder *restapi* and execute:
 
 ```
 ./gradlew bootRun
-
 ```
 After executing the previous command, the REST API will be up and listening to the port 8080
 
@@ -48,7 +46,6 @@ For the angular application you just need Node installed in your machine. After 
 
 ```
 npm install && npm start
-
 ```
 
 From here, everything should be ready. Just navigate to the url http://localhost:4200 to test the web application.
