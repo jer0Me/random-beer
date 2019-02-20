@@ -11,5 +11,5 @@ public interface BeerRepository extends JpaRepository<Beer, Long> {
             value = "SELECT count(*) FROM Beer",
             nativeQuery = true
     )
-    public Long countAll();
+    Long countAll();
 }
