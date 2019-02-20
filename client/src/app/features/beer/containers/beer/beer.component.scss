@@ -1,0 +1,22 @@
+
+#main-panel {
+  margin: 20px;
+  padding: 40px 10px 40px 10px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+
+  & h1 {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+
+    & + button {
+      margin-left: 20px;
+    }
+  }
+}
+
+#content-panel {
+  margin: 20px;
+}
