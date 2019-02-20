@@ -15,6 +15,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./beer-details.component.scss']
 })
 export class BeerDetailsComponent implements OnInit {
+
   @Input()
   beer: Beer;
 
