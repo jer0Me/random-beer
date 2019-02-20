@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController
-@RequestMapping("/beer")
+@RequestMapping("/api/v1/beer")
 public class BeerController {
 
     private final BeerService beerService;
