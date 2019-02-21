@@ -1,5 +1,5 @@
 import { Beer } from './../../models/beer.model';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-beer-details',
@@ -12,7 +12,8 @@ import { Component, OnInit, Input } from '@angular/core';
     </div>
 </div>
   `,
-  styleUrls: ['./beer-details.component.scss']
+  styleUrls: ['./beer-details.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BeerDetailsComponent implements OnInit {
 

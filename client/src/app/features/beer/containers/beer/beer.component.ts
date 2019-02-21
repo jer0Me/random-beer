@@ -1,6 +1,6 @@
 import { Beer } from './../../models/beer.model';
 import { BeerService } from '../../services/beer.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -16,7 +16,8 @@ import { Observable } from 'rxjs';
       <app-beer-details [beer]="(beer$ | async)"></app-beer-details>
     </div>
   `,
-  styleUrls: ['./beer.component.scss']
+  styleUrls: ['./beer.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BeerComponent implements OnInit {
 
